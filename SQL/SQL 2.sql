@@ -1,5 +1,4 @@
 --Table 1: Movies
-
 Create TABLE Movies (
 	MovieID int NOT NULL,
 	Title varchar(255),
@@ -9,7 +8,6 @@ Create TABLE Movies (
 );
 
 --Table 2: Cinema Halls 
-
 Create TABLE CinemaHalls (
 	HallID int NOT NULL,
 	HallName varchar(255),
@@ -18,7 +16,6 @@ Create TABLE CinemaHalls (
 );
 
 --Table 3: Showtimes 
-
 Create TABLE Showtimes (
 	ShowtimeID int NOT NULL,
 	MovieID int NOT NULL,
@@ -32,7 +29,6 @@ Create TABLE Showtimes (
 
 
 --Table 4: Tickets 
-
 Create TABLE Tickets (
 	TicketID int NOT NULL,
 	ShowtimeID int NOT NULL,
@@ -44,14 +40,12 @@ Create TABLE Tickets (
 );
 
 -- Seed data into this table (INSERT)
-
 INSERT INTO Movies (MovieID, Title, ReleaseYear, DurationMovies)
 VALUES 
 ('228', 'Drive', '2011', '100'), 
 ('1337', 'Interstellar', '2013', '169');
 
 -- Update raw
-
 UPDATE Movies
 SET ReleaseYear = 2014
 WHERE MovieID = 228;
